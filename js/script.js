@@ -7,7 +7,15 @@ const personalMovieDB = {
     movies: {},
     actors: {},
     genres: [],
-    privat: false,
+    privat: false
 };
 
-document.write(personalMovieDB["count"]);
+const a = prompt(`Один из последних просмотренных фильмов?`, "Название фильма"),
+      b = prompt(`На сколько Вы оцените его?`, "Оценка от 0 до 10"),
+      c = prompt(`Один из последних просмотренных фильмов?`, "Название фильма"),
+      d = prompt(`На сколько Вы оцените его?`, "Оценка от 0 до 10");
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+      
+console.log(personalMovieDB);
